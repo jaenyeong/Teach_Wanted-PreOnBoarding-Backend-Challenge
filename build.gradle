@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    group 'com.wanted'
+    version '1.0'
+}

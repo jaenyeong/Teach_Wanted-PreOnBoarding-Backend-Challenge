@@ -1,0 +1,5 @@
+rootProject.name = 'Teach_Wanted-PreOnBoarding-Challenge'
+include 'Chapter1-1'
+include 'Chapter1-2'
+include 'Chapter2-1'
+include 'Chapter2-2'
