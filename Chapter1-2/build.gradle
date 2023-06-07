@@ -12,6 +12,11 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // 테스트 코드에서 작성을 하지 않아 `implementation`으로 의존성 추가했으나
+    // JMH를 테스트코드에서만 사용하면 `testImplementation`으로 추가해야 함
+    implementation group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.36'
+    annotationProcessor group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.36'
 }
 
 test {
