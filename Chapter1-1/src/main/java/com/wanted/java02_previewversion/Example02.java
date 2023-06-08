@@ -5,10 +5,10 @@ public class Example02 {
     # JDK Preview Version 적용
 
     JDK 버전 확인 후 경로에서
-    [Run] `java JavaPreviewVersion.java` :::>>> 에러
+    [Run] `java Example02.java` :::>>> 에러
 
     // Preview 버전 적용하여 실행
-    [RUN] `java --enable-preview --source 17 JavaPreviewVersion.java` 명령 실행
+    [RUN] `java --enable-preview --source 17 Example02.java` 명령 실행
     */
 
     public static void main(String[] args) {
