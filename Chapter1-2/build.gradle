@@ -1,9 +1,12 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.1.0'
+    id 'io.spring.dependency-management' version '1.1.0'
 }
 
 group = 'com.wanted'
 version = 'unspecified'
+sourceCompatibility = '17'
 
 repositories {
     mavenCentral()
@@ -17,6 +20,11 @@ dependencies {
     // JMH를 테스트코드에서만 사용하면 `testImplementation`으로 추가해야 함
     implementation group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.36'
     annotationProcessor group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.36'
+
+    // 스레드덤프 분석을 위해 스프링부트 추가
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'com.h2database:h2'
 }
 
 test {
