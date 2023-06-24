@@ -33,7 +33,7 @@ public class Example05 {
         workerThread.start();
 
         try {
-            // printThread의 실행을 확인하기 위해 메인 스레드를 슬립시킴
+            // 워커 스레드의 실행을 확인하기 위해 메인 스레드를 슬립시킴
             Thread.sleep(1_000);
         } catch (InterruptedException e) {
             e.printStackTrace();
