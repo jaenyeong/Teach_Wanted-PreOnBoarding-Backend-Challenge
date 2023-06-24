@@ -17,6 +17,9 @@ dependencies {
     // JMH를 테스트코드에서만 사용하면 `testImplementation`으로 추가해야 함
     implementation group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.36'
     annotationProcessor group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.36'
+
+    // Apache TimedSemaphore 추가
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
 }
 
 test {

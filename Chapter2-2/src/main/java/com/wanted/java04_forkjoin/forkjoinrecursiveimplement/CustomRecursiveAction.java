@@ -1,4 +1,4 @@
-package com.wanted.java04_forkjoin.forkjoinrecursive;
+package com.wanted.java04_forkjoin.forkjoinrecursiveimplement;
 
 import java.util.ArrayList;
 import java.util.Collection;

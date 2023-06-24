@@ -38,6 +38,7 @@ public class Example05 {
             long actualTotal = customThreadPool.submit(sum(numbers)).get();
             System.out.println((lastNum + firstNum) * lastNum / 2 == actualTotal);
         } finally {
+            // 반드시 명시적으로 종료할 것
             customThreadPool.shutdown();
         }
     }
